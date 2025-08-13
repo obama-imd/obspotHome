@@ -20,7 +20,7 @@ export default function Home() {
           <li>Save and see your changes instantly.</li>
         </ol>
 
-        <div className={styles.ctas}>
+        <div className="font-bold text-2xl text-red-900">
           <a
             className={styles.primary}
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
