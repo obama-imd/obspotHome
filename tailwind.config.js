@@ -40,7 +40,7 @@ module.exports = {
           700: '#1d4ed8',
           800: '#1e40af',
           900: '#1e3a8a',
-          950: '#172554',
+          black: '#000000',
         },
 
         // Cores de destaque
@@ -101,10 +101,7 @@ module.exports = {
 
       // Fontes personalizadas
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        serif: ['Merriweather', 'Georgia', 'serif'],
-        mono: ['JetBrains Mono', 'Menlo', 'Monaco', 'monospace'],
-        display: ['Poppins', 'Inter', 'sans-serif'],
+        space: ['Space Grotesk', 'system-ui', 'sans-serif']
       },
 
       // Tamanhos de fonte customizados

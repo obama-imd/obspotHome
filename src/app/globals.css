@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+@custom-variant hover (&:hover);
 
 html,
 body {
@@ -17,25 +18,5 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-:root {
-  --color-primary: 96 165 250; /* blue-500 em RGB */
-  --color-secondary: 139 92 246; /* violet-500 */
-  --color-accent: 34 197 94; /* green-500 */
-  --color-surface: 255 255 255;
-  --color-on-surface: 17 24 39;
-}
-
-[data-theme="dark"] {
-  --color-primary: 96 165 250; /* blue-400 */
-  --color-secondary: 167 139 250; /* violet-400 */
-  --color-accent: 74 222 128; /* green-400 */
-  --color-surface: 17 24 39;
-  --color-on-surface: 243 244 246;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
 }
