@@ -1,13 +1,16 @@
-import Image from "next/image";
+import Header from "@/components/common/header/basicHeader";
 
-export default function Rede() {
+export default function Sobre() {
   return (
-    <div className="
-      text-[length:200px] text-red-900 
-      min-h-screen 
-      flex items-center justify-center
-    ">
-      Sobre
+    <div>
+      <Header />
+      <main className="
+        text-[length:200px] 
+        min-h-screen 
+        flex items-center justify-center
+      ">
+        Sobre
+      </main>
     </div>
   );
 }
