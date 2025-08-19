@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import React, { JSX } from "react";
 import ObspotLogo from "../obspotLogo";
+import LoginButton from "./loginButton";
 
 const navigationItems = [
   { label: "Rede", href: "rede" }, 
@@ -20,13 +21,12 @@ export default function NavigationBar(): JSX.Element {
     <nav className="
         flex w-full h-auto items-center justify-around
         max-w-100vw
-        
       ">
 
       <ObspotLogo />
 
       <div className="
-        inline-flex items-center justify-center gap-10 mr-100
+        flex items-center justify-center gap-20 mr-100
       ">
         
         <NavigationMenu>
@@ -35,7 +35,7 @@ export default function NavigationBar(): JSX.Element {
               <NavigationMenuItem key={index}>
                 <NavigationMenuLink
                   href={item.href}
-                  className="relative w-fit [font-family:'Space_Grotesk-Regular',Helvetica] font-normal text-[#000000] text-xl tracking-[0] leading-7 whitespace-nowrap hover:text-gray-600 transition-colors"
+                  className="w-fit font-space text-2xl"
                 >
                   {item.label}
                 </NavigationMenuLink>
@@ -44,11 +44,7 @@ export default function NavigationBar(): JSX.Element {
           </NavigationMenuList>
         </NavigationMenu>
 
-        <Button className="inline-flex items-start gap-2.5 px-[35px] py-5 relative flex-[0_0_auto] bg-black rounded-[14px] h-auto hover:bg-dark/90">
-          <span className="relative w-fit mt-[-1.00px] [font-family:'Space_Grotesk-Regular',Helvetica] font-normal text-white text-xl text-center tracking-[0] leading-7 whitespace-nowrap">
-            Login
-          </span>
-        </Button>
+        <LoginButton/>
 
       </div>
 
