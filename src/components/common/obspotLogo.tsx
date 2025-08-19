@@ -1,11 +1,16 @@
 import Image from 'next/image';
 import React, { JSX } from 'react';
 
-export default function ObspotLogo(): JSX.Element {
+interface ObspotLogoProps {
+  href?: string;
+}
+
+const ObspotLogo: React.FC<ObspotLogoProps> = ({ href }) => {
   return (
     <div className="
-        flex items-center justify-center w-[402px] h-[217px]
-      ">
+      flex items-center justify-center w-[402px] h-[217px]
+    ">
+      <a href={href || "/"}>
         <Image
           className="
             w-auto h-auto
@@ -19,6 +24,9 @@ export default function ObspotLogo(): JSX.Element {
           height={217}
           priority
         />
-      </div>
+      </a>
+    </div>
   );
 }
+
+export default ObspotLogo;
