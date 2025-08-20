@@ -1,5 +1,5 @@
 import { JSX } from "react";
-import Headline from "./headline/headline";
+import Headline from "./headlineSection/headline";
 
 export default function LandingPageMain(): JSX.Element {
     return (
