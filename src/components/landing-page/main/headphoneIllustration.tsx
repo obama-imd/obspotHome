@@ -18,8 +18,8 @@ const HeadphoneIllustration: React.FC<HeadphoneIllustrationProps> =
                 "
                 alt="Rede STEAM Potiguar"
                 src="/images/headphone_illustration.svg"
-                width={width || 402}
-                height={height || 217}
+                width="600"
+                height="515"
                 priority
             />
         </div>

@@ -14,9 +14,9 @@ const SignInButton: React.FC<LoginButtonProps> = ({ text }) => {
     <Button 
         className="
             inline-flex items-center justify-center 
-            w-full h-20 px-20 py-35 rounded-[14px]
+            w-full max-w-165 h-20 px-20 py-35 rounded-[14px]
             bg-black
-            text-white font-space text-2xl font-normal text-center
+            text-white font-space text-3xl font-normal text-center
             hover:bg-gray-800
         "
 
