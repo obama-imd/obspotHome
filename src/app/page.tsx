@@ -1,17 +1,21 @@
-import Image from "next/image";
 import Header from "@/components/common/header/basicHeader";
+import Main from "@/components/landing-page/main/landingPageMain";
 
 export default function Home() {
   return (
-    <div className="bg-background-secondary">
-      <div className="
-        flex items-start justify-center align-spa min-h-screen
+    <div className="
+      min-h-screen
+      bg-background-secondary
+    ">
+      <header className="
+        flex items-start justify-center align-spa
       ">
         <Header/>
-      </div>
-        <main className="">
-        </main> 
-        <footer className="">
+      </header>
+      <main className="">
+        <Main/>
+      </main> 
+      <footer className="">
       </footer>
     </div>
   );
