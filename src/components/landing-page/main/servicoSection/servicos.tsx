@@ -1,10 +1,10 @@
-interface Service {
+export interface Servico {
   title: string;
   illustrationPath?: string;
   href?: string;
 }
 
-const servicos: Service[] = 
+const servicos: Servico[] = 
     [
         {
             title: 'Rede STEAM Potiguar',
