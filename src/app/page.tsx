@@ -4,8 +4,8 @@ import Main from "@/components/landing-page/main/landingPageMain";
 export default function Home() {
   return (
     <div className="
-      min-h-screen
-      flex flex-col justify-between
+      min-h-600
+      flex flex-col gap-30  
       bg-background-secondary
     ">
       <header className="
@@ -13,7 +13,9 @@ export default function Home() {
       ">
         <Header/>
       </header>
-      <main className="">
+      <main className="
+        h-400
+      ">
         <Main/>
       </main> 
       <footer className="">

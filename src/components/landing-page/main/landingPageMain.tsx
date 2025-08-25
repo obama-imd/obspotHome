@@ -1,11 +1,12 @@
 import { JSX } from "react";
 import Headline from "./headlineSection/headline";
+import Servicos from "./servicoSection/servicoSection"; 
 
 export default function LandingPageMain(): JSX.Element {
     return (
         <section 
             className="
-                flex flex-col items-center justify-center align-spa
+                flex flex-col gap-70
             "
         >
             <article className="
@@ -13,8 +14,12 @@ export default function LandingPageMain(): JSX.Element {
             ">
                 <Headline/>
             </article>
-            <article>
-                Servicos
+            <article
+                className="
+                    
+                "
+            >
+                <Servicos/>
             </article>
         </section>
     );
