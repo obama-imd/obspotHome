@@ -9,7 +9,7 @@ import React, { JSX } from "react";
 import ObspotLogo from "../obspotLogo";
 import LoginButton from "./loginButton";
 
-const navigationItems = [
+export const navigationItems = [
   { label: "Rede", href: "rede" }, 
   { label: "Recursos Educacionais", href: "recursos-educacionais" },
   { label: "Observatório", href: "observatorio" },

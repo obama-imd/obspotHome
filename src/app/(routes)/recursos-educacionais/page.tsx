@@ -4,6 +4,7 @@ import Header from "@/components/common/header/basicHeader";
 import { useState } from "react";
 import "./educationalResources.css";
 import { ExpandIcon, FilterIcon, PDFIcon, SearchIcon } from "../../../components/common/icons/mainIcons";
+import Footer from "@/components/common/footer/footer";
 
 const searchBarText = "Busque por artigos, manuais, materiais didáticos..."
 
@@ -162,10 +163,13 @@ export default function RecursosEducacionais() {
         min-h-screen 
         flex items-center
         column
-      ">
+        main-color
+      "
+      >
         <SearchBar />
         <PublicationCard />
       </main>
+      <Footer />
     </div>
   );
 }
