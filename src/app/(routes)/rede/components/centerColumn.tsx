@@ -27,10 +27,10 @@ export function CenterColumn({ userInfo }: UserProps) {
                 </div>
                 <div className="flex actions">
                     {newPostCardButtons.map((text, index) => {
-                        return <div className="flex postButtons" key={index}>
-                            <a href=""><PlusIcon /></a>
+                        return <a href="" className="flex postButtons" key={index}>
+                            <PlusIcon />
                             <p>{text}</p>
-                        </div>
+                        </a>
                     })}
                 </div>
             </div>
@@ -44,21 +44,21 @@ export function CenterColumn({ userInfo }: UserProps) {
                                 <p className="userType">{userInfo.type}</p>
                             </div>
                         </div>
-                        <div>{post.text}</div>
+                        <p className="mainText">{post.text}</p>
                         <div className="flex actions">
-                            <a className="flex btn">
+                            <a href="" className="flex btn">
                                 <HeartIcon />
                                 <p>Curtir</p>
                             </a>
-                            <a className="flex btn">
+                            <a href="" className="flex btn">
                                 <ShareIcon />
                                 <p>Compartilhar</p>
                             </a>
                             <div className="postButtons">
-                                <div className="flex" key={index}>
-                                    <a><PlusIcon /></a>
+                                <a href="" className="flex" key={index}>
+                                    <PlusIcon />
                                     <p>{feedPostCardButtonText}</p>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>
