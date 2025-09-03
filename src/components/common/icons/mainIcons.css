@@ -3,3 +3,7 @@
     height: 31.387px;
     flex-shrink: 0;
 }
+
+.offwhite {
+    fill: var(--off-white, #F3F3F3);
+}
