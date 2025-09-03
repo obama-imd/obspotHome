@@ -29,7 +29,7 @@ export function EndColumn() {
                             <p className="userName">{user.name}</p>
                             <p className="userType">{user.type}</p>
                             <a href="" className="flex connectBtn">
-                                <a href=""><PlusIcon /></a>
+                                <PlusIcon />
                                 <p>{buttonText}</p>
                             </a>
                         </div>
