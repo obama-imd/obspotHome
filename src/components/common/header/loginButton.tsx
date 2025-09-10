@@ -1,4 +1,3 @@
-
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import React from "react";
@@ -15,7 +14,7 @@ export default function LoginButton() {
 
         asChild
     >
-        <Link href="/login"> Login </Link>
+        <Link href="/auth/login"> Login </Link>
     </Button>
   );
 }
