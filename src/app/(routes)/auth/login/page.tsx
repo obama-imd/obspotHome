@@ -13,11 +13,11 @@ export default function LoginPage() {
         <div className="auth">
             <div className="card flex column">
                 <label>E-mail</label>
-                <input className="" type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} />
+                <input className="inputBox" type="text" value={email} onChange={(e) => { setEmail(e.target.value) }} />
                 <label>Senha</label>
-                <input className="" type="text" value={password} onChange={(e) => { setPassword(e.target.value) }} />
-                <button>Entrar</button>
-                <a href="./register">Cadastrar</a>
+                <input className="inputBox" type="text" value={password} onChange={(e) => { setPassword(e.target.value) }} />
+                <button className="btn">Entrar</button>
+                <a className="link" href="./register">Cadastrar</a>
             </div>
         </div>
     )
