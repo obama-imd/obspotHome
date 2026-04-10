@@ -6,7 +6,7 @@ export default function LandingPageMain(): JSX.Element {
     return (
         <section 
             className="
-                flex flex-col gap-70
+                flex flex-col gap-60
             "
         >
             <article className="
