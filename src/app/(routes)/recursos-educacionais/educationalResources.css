@@ -1,0 +1,88 @@
+.card {
+    border-radius: 10px;
+    background: var(--off-white, #F3F3F3);
+    max-width: 423px;
+    height: 196px;
+    color: #000;
+    font-family: "Space Grotesk";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 14.5px;
+}
+
+.card-actions {
+    gap: 10px;
+}
+
+.card-actions a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body {
+    padding-top: 33.33px;
+    justify-content: space-between;
+    height: calc(100% - 33.33px - 14.5px);
+}
+
+.card-header {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.30);
+}
+
+.card-title {
+    padding: 10px 0;
+    font-weight: 500;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.dFlex {
+    display: flex;
+}
+
+.grid {
+    padding: 0 55px;
+    flex-shrink: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 14px;
+    column-gap: 43px;
+    justify-self: start;
+}
+
+.inputBox {
+    width: 588;
+    height: 70;
+    opacity: 1;
+    border-radius: 50px;
+    top: 22px;
+    left: 37px;
+    background-color: #F3F3F3;
+    font-family: Space Grotesk;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 21px 32px;
+    margin: 59.5px 0 89px 0;
+}
+
+/* .main-color {
+    background: #DAE99C;
+} */
+
+.searchBar {
+    width: 390px;
+    height: 28px;
+}
+
+.searchIcons {
+    padding-left: 58.85px;
+    gap: 18.68px;
+}
