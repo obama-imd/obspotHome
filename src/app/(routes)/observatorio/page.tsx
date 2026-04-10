@@ -1,4 +1,5 @@
 import Header from "@/components/common/header/basicHeader";
+import Potimap from "@/components/potimap/Potimap";
 
 export default function Observatorio() {
   return (
@@ -9,7 +10,7 @@ export default function Observatorio() {
         min-h-screen 
         flex items-center justify-center
       ">
-        Observatorio
+        <Potimap />
       </main>
     </div>
   );
