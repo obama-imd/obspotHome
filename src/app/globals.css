@@ -20,3 +20,56 @@ body {
   margin: 0;
   font-family: 'Space Grotesk', system-ui, sans-serif;
 }
+
+.auth-loading-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background:
+    radial-gradient(circle at top, rgba(3, 176, 121, 0.14), transparent 34%),
+    linear-gradient(180deg, #f8fcfb 0%, #eef6f5 100%);
+}
+
+.auth-loading-card {
+  height: 20rem;
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 2.5rem 1.5rem;
+  border: 1px solid rgba(0, 55, 81, 0.08);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 28px 70px rgba(0, 55, 81, 0.1);
+}
+
+.auth-loading-logo-wrapper {
+  width: min(100%, 18rem);
+  display: flex;
+  justify-content: center;
+  transform-origin: top center;
+  animation: auth-logo-swing 2.2s ease-in-out infinite;
+}
+
+.auth-loading-logo {
+  width: 100%;
+  height: auto;
+}
+
+@keyframes auth-logo-swing {
+  0% {
+    transform: rotate(-45deg);
+  }
+
+  50% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(-45deg);
+  }
+}
